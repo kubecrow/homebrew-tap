@@ -2,12 +2,12 @@ cask "kubecrow" do
   arch arm: "arm64", intel: "x64"
 
   version "0.1.5"
-  sha256 arm:   "8f11ff0ce638a2979bbeacc1a438e0d47424f40ac426b8aafbf3ef60fc6409cb",
-         intel: "9f35e0bf097022221dfa941f0defcdb0d0411086f8ae5ae6fb40428eecc4b1d9"
+  sha256 arm:   "c4714300addd74fc2344ba462e621da2a39ee562a21ea83a03d7665370c347a3",
+         intel: "d0e7f34001a756004c088a836c5f6853e3f1d22a6db589da3125bc3b126f071f"
 
   url "https://github.com/kubecrow/kubecrow/releases/download/v#{version}/KubeCrow-#{version}-#{arch}.dmg"
   name "KubeCrow"
-  desc "Kubernetes IDE for the Mac"
+  desc "Kubernetes IDE"
   homepage "https://kubecrow.com/"
 
   livecheck do
@@ -16,7 +16,7 @@ cask "kubecrow" do
   end
 
   auto_updates true
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "KubeCrow.app"
 
