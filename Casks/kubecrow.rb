@@ -1,9 +1,9 @@
 cask "kubecrow" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.0.0"
-  sha256 arm:   "85a17d9d3cb0288e0800e9484afc49fa845ab66cd967c9b472d9020da89b4d30",
-         intel: "3cf349f93cbf437deb55e915143d3bac9122a7c1c8cb7cc113be2b0b31a7c8cd"
+  version "1.0.1"
+  sha256 arm:   "2e54fe74860d1f083cf4ee1cfa2dbec05f6e73bad0bc731763db6962e57dbeae",
+         intel: "38ee7af7f0441bbaff48e248562065815101d9ae1f107a75ec90cb67461d8e3a"
 
   url "https://github.com/kubecrow/kubecrow/releases/download/v#{version}/KubeCrow-#{version}-#{arch}.dmg"
   name "KubeCrow"
